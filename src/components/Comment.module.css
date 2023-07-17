@@ -1,0 +1,74 @@
+.comment {
+  display: flex;
+  gap: 1rem;
+}
+
+.right {
+  flex: 1;
+}
+
+.comment + .comment {
+  margin-top: 1.5rem;
+}
+
+.content {
+  background: var(--gray-750);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.comment header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  line-height: 160%;
+}
+
+.comment header strong {
+  display: block;
+  color: var(--gray-500);
+  font-size: 0.875rem;
+}
+
+.comment header {
+  color: var(--gray-600);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.content p {
+  padding-block: 1rem;
+  color: var(--gray-400);
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.comment button {
+  margin-top: 1rem;
+  border: none;
+  background: transparent;
+
+  color: var(--gray-600);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.comment button span::before {
+  content: "•";
+  margin-right: 0.5rem;
+}
+
+.comment button:hover {
+  color: var(--green-500);
+}
+
+.comment header button {
+  margin-top: initial;
+}
+.comment header button:hover {
+  color: var(--red-300);
+  cursor: pointer;
+}

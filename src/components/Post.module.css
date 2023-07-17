@@ -1,0 +1,112 @@
+.post {
+  background: var(--gray-800);
+  border-radius: 8px;
+
+  padding: 2.5rem 2.5rem;
+}
+.post + .post {
+  margin-top: 1rem;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 1.5rem;
+}
+
+.postHeader time {
+  color: var(--gray-600);
+  font-size: 0.875rem;
+}
+
+.postHeader div:first-child {
+  display: flex;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  margin-left: 1rem;
+}
+
+.userInfo strong {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 160%;
+
+  color: var(--gray-500);
+}
+
+.userInfo span {
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+
+.content p {
+  color: var(--gray-400);
+  margin-bottom: 1rem;
+  line-height: 160%;
+}
+
+.content a {
+  color: var(--green-500);
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: var(--green-300);
+}
+
+.post > footer {
+  margin-block: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--gray-700);
+}
+
+.post > footer strong {
+  color: var(--gray-500);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.post form textarea {
+  margin: 1rem 0;
+  width: 100%;
+  resize: none;
+  height: 6rem;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  background: var(--background-body);
+  color: var(--gray-400);
+  font-weight: 400;
+}
+
+.post form textarea:focus {
+  outline: 1px solid var(--green-500);
+}
+
+.post form button {
+  border: none;
+  background: var(--green-500);
+  color: var(--font-color);
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+.post form button:hover {
+  background: var(--green-300);
+  cursor: pointer;
+}
+
+.post form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
